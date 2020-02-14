@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Requestform">
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginTop="20dp"
+    android:textColorHint="@color/textcolor">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CNIC"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/CNIC"
+        android:inputType="number"
+        android:textSize="22sp">
+
+    </com.google.android.material.textfield.TextInputEditText>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:textColorHint="@color/textcolor">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/homeAddress"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/permanant_address"
+        android:inputType="textPostalAddress"
+        android:padding="25dp"
+        android:textSize="22sp">
+
+    </com.google.android.material.textfield.TextInputEditText>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/textcolor">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNo"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/Phone_NO"
+            android:inputType="phone"
+            android:textSize="22sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/textcolor">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/packageStatus"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/how_many_days_you_need"
+            android:inputType="number"
+            android:padding="25dp"
+            android:textSize="22sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rounded_button"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="@string/submit"
+    android:textColor="@color/textcolor"
+    android:textSize="22sp"
+    android:onClick="wheelchairRequest"    />
+
+</LinearLayout>
